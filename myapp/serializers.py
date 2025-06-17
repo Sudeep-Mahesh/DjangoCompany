@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import CompanyModel
+from .models import Company
 
 class CompanyModelSerializer(serializers.ModelSerializer):
     class Meta:
-        model = CompanyModel
-        fields = ['CompanyId', 'CompanyName']
+        model = Company
+        fields = ['CompanyID', 'CompanyName']
