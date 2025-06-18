@@ -1,0 +1,7 @@
+<form method="post" action='http://127.0.0.1:8000/updateCompany/'>
+    {% csrf_token %}
+    <input type="text" name="CompanyID" placeholder="CompanyID">
+    <input type="text" name="CompanyName" placeholder="CompanyName">
+    {% comment %} <input type="text" name="address" placeholder="Address"> {% endcomment %}
+    <button type="submit">Update Company</button>
+  </form>

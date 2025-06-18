@@ -16,10 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myapp.views import StartPage, getCompanyList
+from myapp.views import StartPage, getCompanyList, getCompanyByID, createNewCompany, displayNewCompany, deletePageView, deleteCompanyByID, updatePageView, updateCompany
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', StartPage),
-    path('companylist/', getCompanyList)
+    path('companylist/', getCompanyList),
+    path('company/<int:CompanyID>/', getCompanyByID ),
+    path('createCompany/', createNewCompany),
+    path('newCompany/', displayNewCompany),
+    path('deletePage/', deletePageView),
+    path('deleteCompany/', deleteCompanyByID),
+    path('updatePage/', updatePageView),
+    path('updateCompany/', updateCompany)
 ]
