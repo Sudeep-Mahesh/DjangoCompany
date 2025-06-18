@@ -1,2 +1,2 @@
 # DjangoCompany
-Django Practice Innoventes
+Django Practice Innoventes - RELEASE 1.0
