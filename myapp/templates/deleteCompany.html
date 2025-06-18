@@ -1,0 +1,5 @@
+<form method="post" action='http://127.0.0.1:8000/deleteCompany/'>
+    {% csrf_token %}
+    <input type="text" name="CompanyID" placeholder="CompanyID">
+    <button type="submit">Delete Company</button>
+  </form>
